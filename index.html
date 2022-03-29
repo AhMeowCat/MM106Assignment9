@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JOURNEY WITH ME</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Roboto&family=Special+Elite&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="music">
+    <audio controls autoplay loop>
+      <source src="audio/birdsong.ogg" type="audio/ogg">
+      <source src="audio/birdsong.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <div class="background1">
+    <div class="background2">
+
+      <div class="gridwrapper">
+
+        <header>
+          <img id="butterfly" src="images/drawings/butterfly.png" alt="butterfly">
+          <a id="topheading1" href="index.html">journey with me</a>
+        </header>
+        <nav>
+          <a id="topheading2" href="index.html">journey with me</a>
+          <a class="search" href="#"><img id="search2" src="images/icons/all-search.png" alt="search"></a>
+          <ul>
+            <li class="nohover"><a class="active" href="#">home</a></li>
+            <li><a href="thoughts.html">thoughts</a></li>
+            <li><a href="stories.html">stories</a></li>
+            <li><a href="mentor.html">mentor</a></li>
+            <li><a href="connect.html">connect</a></li>
+            <a class="search" href="#"><img id="search1" src="images/icons/all-search.png" alt="search"></a>
+          </ul>
+        </nav>
+
+
+        <div class="left topbar" id="home">
+          <img id="sun" src="images/drawings/sun.png" alt="sun">
+          <h1>journey with me</h1>
+          <img id="flower" src="images/drawings/flower.png" alt="a little flower">
+          <p id="homequote">“Just living is not enough,” <br>
+            said the butterfly, <br>
+            “one must have sunshine, <br>
+            freedom and a little flower”<br>
+            <span>Hans Christian Anderson</span></p>
+        </div>
+
+        <div class="right topbar">          
+        </div>
+
+        <div class="playmusic">
+          <button id="playmusic" onClick="playPause()">
+            <audio src="audio/birdsong.mp3" autoplay loop></audio>
+            listen to birds!
+          </button>
+
+          <script>
+            var aud = document.getElementById("playmusic").children[0];
+            var isPlaying = false;
+            aud.pause();
+
+            function playPause() {
+              if (isPlaying) {
+                aud.pause();
+              } else {
+                aud.play();
+              }
+              isPlaying = !isPlaying;
+            }
+          </script>
+        </div>
+
+        <!--
+        <div class="journey">
+          <img id="riverpath" src="images/drawings/river+path.png" alt="butterfly flying over river">
+        </div>
+      -->
+
+        <div class="first destination">
+          <a href="thoughts.html"><img src="images/icons/home-thoughts.png" alt="thoughts"></a>
+          <a class="label" href="thoughts.html">thoughts</a>
+        </div>
+
+        <div class="second destination">
+          <a href="stories.html"><img src="images/icons/home-stories.png" alt="stories"></a>
+          <a class="label" href="stories.html"> stories </a>
+        </div>
+
+        <div class="third destination">
+          <a href="mentor.html"><img src="images/icons/home-mentor.png" alt="mentor"></a>
+          <a class="label" href="mentor.html"> mentor </a>
+        </div>
+
+        <!--
+        <div class="third" id="homequote2">
+          <p>“In us, there is a river of feelings, in which every drop of water is a different feeling, and each feeling relies on all the others for its existence. To observe it, we just sit on the bank of the river and identify each feeling as it surfaces, flows by, and disappears.”<br>
+            <span>Thich Nhat Hanh</span></p>
+        </div>
+        -->
+
+        <div class="butterfly">
+          <div class="trigger">
+            <img id="flyingbutterfly" src="images/gif/butterfly1.gif" alt="flying butterfly">
+          </div>
+        </div>
+
+        <div class="fourth destination">
+          <a href="connect.html"><img src="images/icons/home-connect.png" alt="connect"></a>
+          <a class="label" href="connect.html">connect</a>
+        </div>
+
+        <div class="bottombar">
+          <div class="trigger">
+            <img id="CatBunny" src="images/drawings/bunny-color.png" alt="Cat+Bunny">
+            <p id="tagline_R">Love is the wind that sails us onto our journey.</p>
+            <img id="boat" src="images/icons/all-boat.png" alt="boat">
+          </div>
+        </div>
+
+        <footer>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">terms & conditions</a></li>
+            <p>Copyright &#169 2022 Catherine Chan & Chi Fang. All rights reserved.</p>
+          </ul>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>

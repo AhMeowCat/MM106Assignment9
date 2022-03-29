@@ -1666,7 +1666,7 @@ footer ul li {
 @media (min-aspect-ratio: 631/937) and (max-aspect-ratio: 1090/937) {
 
   .bottombar {
-    min-height: 200px;
+    min-height: 220px;
   }
 }
 

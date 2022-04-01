@@ -1174,7 +1174,7 @@ footer ul li {
   }
 
   .right.topbar {
-    grid-column: 3/7;
+    grid-column: 2/7;
     grid-row: 2/4;
     justify-self: start;
     align-self: start;

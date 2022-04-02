@@ -82,7 +82,7 @@ a,
   letter-spacing: 5px;
 }
 
-h3, .destination>.label {
+h3, a.label {
   font-family: var(--font-family-title);
   font-size: 1.2em;
   /*2vmin */
@@ -743,7 +743,7 @@ nav li a {
   /*8vmin*/
 }
 
-.destination>.label {
+a.label {
   color: #009ED9;
   background-color: var(--bg-color-light);
   border-radius: 10px;
@@ -1195,7 +1195,7 @@ footer ul li {
     letter-spacing: 3px;
   }
 
-  h3, .destination>.label {
+  h3, a.label {
     font-size: 0.8em;
     /* wide screen 1.2em*/
     letter-spacing: 2px;
@@ -1439,7 +1439,7 @@ footer ul li {
     letter-spacing: 2px;
   }
 
-  h3, .destination>.label {
+  h3, a.label {
     font-size: 0.8em;
     /* wide screen 1.2em*/
     letter-spacing: 2px;
